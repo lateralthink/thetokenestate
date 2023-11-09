@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The token estate</title>
   <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/favicon.ico"/>
+  <link href="https://fonts.cdnfonts.com/css/abel" rel="stylesheet">
   <style>
+    * {
+      font-family: 'Abel', sans-serif;
+    }
+
     body {
+      position: relative;
       width: 100vw;
       height: 100vh;
       background-color: #19072D;
@@ -17,9 +23,24 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    form#subscribe {
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      transform: translateX(-50%);
+    }
+
+    form#subscribe > * {
+      font-size: 1.2rem;
+      padding: .2rem .5rem;
+    }
   </style>
 </head>
 <body>
-  <!-- <img src="/assets/logo.png" alt="The Token Estate" width="100%" height="100%"> -->
+  <form id="subscribe" method="POST" netlify>
+    <input id="email" type="email" placeholder="johndoe@example.com">
+    <button type="submit">Subscribe</button>
+  </form>
 </body>
 </html>
