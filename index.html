@@ -14,6 +14,10 @@
       --secondary-color: #DBB171;
     }
 
+    input, button {
+      all: unset;
+    }
+
     body {
       position: relative;
       width: 100vw;
@@ -36,13 +40,21 @@
     }
 
     form > * {
-      font-size: 1.2rem;
-      padding: .2rem .5rem;
+      font-size: 1.1rem;
+      padding: .4rem .5rem;
+    }
+
+    form input {
+      background-color: white;
     }
 
     form button {
       color: var(--main-color);
       background-color: var(--secondary-color);
+    }
+
+    form button:hover {
+      opacity: 75%;
     }
   </style>
 </head>
