@@ -9,13 +9,16 @@
   <style>
     * {
       font-family: 'Abel', sans-serif;
+
+      --main-color: #19072D;
+      --secondary-color: #DBB171;
     }
 
     body {
       position: relative;
       width: 100vw;
       height: 100vh;
-      background-color: #19072D;
+      background-color: var(--main-color);
       padding: 0;
       margin: 0;
       background-image: url(/assets/logo.png);
@@ -34,6 +37,11 @@
     form#subscribe > * {
       font-size: 1.2rem;
       padding: .2rem .5rem;
+    }
+
+    form#subscribe button {
+      color: var(--main-color);
+      background-color: var(--secondary-color);
     }
   </style>
 </head>
